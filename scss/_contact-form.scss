@@ -1,0 +1,51 @@
+.container-form {
+  box-sizing: border-box;
+}
+.contact-box {
+  background: #a6a6a6;
+  color: #444;
+  line-height: 1.6;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 1em;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 20px rgba(204, 204, 0, 0.7);
+}
+
+.contact-box form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+.contact-box form label {
+  display: block;
+}
+.contact-box form p {
+  margin: 0;
+}
+
+.contact-box form .full {
+  grid-column: 1/3;
+}
+.contact-box form button,
+.contact-box form input,
+.contact-box form textarea {
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #eece1a;
+}
+
+.contact-box form button {
+  background: #a6a6a6;
+  /*border: 0; */
+  text-transform: uppercase;
+}
+
+.contact-box form button:hover,
+.contact-box form button:focus {
+  background: #eece1a;
+  color: #ffff;
+  outline: 0;
+  transition: background-color 2s ease-out;
+}
